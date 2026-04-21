@@ -1,0 +1,2175 @@
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>DreamLabsTech - 120 Apps Revolucionarias</title>
+<meta name="description" content="Explora el catalogo de 120+ apps moviles de DreamLabsTech: salud mental, fitness, finanzas, productividad, educacion y mucho mas."/>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = { darkMode: 'class' };
+  (function () {
+    const saved = localStorage.getItem('dlt-theme');
+    const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (saved === 'dark' || (!saved && systemDark)) document.documentElement.classList.add('dark');
+  })();
+</script>
+<style>
+  body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+  .line-clamp-3 { display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden; }
+  .hero-bg { background: radial-gradient(1200px 600px at 10% -10%, rgba(124,58,237,0.25), transparent), radial-gradient(900px 500px at 90% -20%, rgba(14,165,233,0.25), transparent); }
+  .cat-btn.active { background: #111827; color: white; border-color: #111827; }
+  .dark .cat-btn.active { background: #f8fafc; color: #0f172a; border-color: #f8fafc; }
+</style>
+</head>
+<body class="bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100">
+
+<header class="sticky top-0 z-30 backdrop-blur bg-white/80 dark:bg-slate-900/80 border-b border-slate-200 dark:border-slate-800">
+  <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+    <a href="#top" class="flex items-center gap-3">
+      <span class="w-9 h-9 rounded-xl flex items-center justify-center text-white font-extrabold" style="background:linear-gradient(135deg,#7C3AED,#06B6D4)">D</span>
+      <span class="font-extrabold text-slate-900 dark:text-white">DreamLabsTech</span>
+    </a>
+    <nav class="hidden md:flex gap-6 text-sm font-medium">
+      <a href="#catalog" class="hover:opacity-75">Catalogo</a>
+      <a href="#categories" class="hover:opacity-75">Categorias</a>
+      <a href="#contact" class="hover:opacity-75">Contacto</a>
+    </nav>
+    <div class="flex items-center gap-2">
+      <button onclick="toggleTheme()" aria-label="Cambiar tema" class="w-9 h-9 rounded-full border border-slate-200 dark:border-slate-700 flex items-center justify-center">
+        <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m12.728 0l-.707-.707M6.343 6.343l-.707-.707M16 12a4 4 0 11-8 0 4 4 0 018 0z'/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<section id="top" class="hero-bg">
+  <div class="max-w-6xl mx-auto px-4 py-20 md:py-28">
+    <div class="max-w-3xl">
+      <span class="inline-block text-xs font-semibold px-3 py-1 rounded-full bg-violet-100 text-violet-700 dark:bg-violet-500/20 dark:text-violet-300">Catalogo oficial - 2026</span>
+      <h1 class="mt-4 text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-tight">DreamLabsTech<br/><span class="bg-gradient-to-r from-violet-500 via-fuchsia-500 to-cyan-500 bg-clip-text text-transparent">120 Apps Revolucionarias</span></h1>
+      <p class="mt-6 text-lg md:text-xl text-slate-600 dark:text-slate-300">Productos moviles cuidadosamente disenados en 13 categorias: bienestar, fitness, finanzas, productividad y mucho mas. Una suite completa para acompanarte cada dia.</p>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href="#catalog" class="inline-flex items-center gap-2 bg-slate-900 text-white dark:bg-white dark:text-slate-900 font-semibold px-6 py-3 rounded-xl shadow-lg">
+          Explorar apps
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+        <a href="#categories" class="inline-flex items-center gap-2 font-semibold px-6 py-3 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800">
+          Ver categorias
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="categories" class="py-10">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6">
+      <div>
+        <h2 class="text-2xl font-extrabold text-slate-900 dark:text-white">Catalogo completo</h2>
+        <p class="text-sm text-slate-600 dark:text-slate-300">Filtra por categoria o busca por nombre. 126 apps disponibles.</p>
+      </div>
+      <div class="relative w-full md:w-80">
+        <input id="search" type="search" placeholder="Buscar app..." class="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-violet-400"/>
+        <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-slate-400' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M21 21l-4.3-4.3M10 18a8 8 0 118-8 8 8 0 01-8 8z'/></svg>
+      </div>
+    </div>
+    <div class="flex flex-wrap gap-2">
+      <button class="cat-btn active px-4 py-2 rounded-full text-sm font-semibold border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700" data-cat="all">Todas</button>
+      <button class="cat-btn px-4 py-2 rounded-full text-sm font-semibold border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700" data-cat="Salud Mental">Salud Mental</button><button class="cat-btn px-4 py-2 rounded-full text-sm font-semibold border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700" data-cat="Fitness">Fitness</button><button class="cat-btn px-4 py-2 rounded-full text-sm font-semibold border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700" data-cat="Finanzas">Finanzas</button><button class="cat-btn px-4 py-2 rounded-full text-sm font-semibold border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700" data-cat="Alimentacion">Alimentacion</button><button class="cat-btn px-4 py-2 rounded-full text-sm font-semibold border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700" data-cat="Productividad">Productividad</button><button class="cat-btn px-4 py-2 rounded-full text-sm font-semibold border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700" data-cat="Educacion">Educacion</button><button class="cat-btn px-4 py-2 rounded-full text-sm font-semibold border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700" data-cat="Estilo de Vida">Estilo de Vida</button><button class="cat-btn px-4 py-2 rounded-full text-sm font-semibold border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700" data-cat="Musica">Musica</button><button class="cat-btn px-4 py-2 rounded-full text-sm font-semibold border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700" data-cat="Herramientas">Herramientas</button><button class="cat-btn px-4 py-2 rounded-full text-sm font-semibold border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700" data-cat="Social">Social</button><button class="cat-btn px-4 py-2 rounded-full text-sm font-semibold border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700" data-cat="Ecommerce">Ecommerce</button><button class="cat-btn px-4 py-2 rounded-full text-sm font-semibold border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700" data-cat="Juegos">Juegos</button><button class="cat-btn px-4 py-2 rounded-full text-sm font-semibold border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700" data-cat="Negocios">Negocios</button>
+    </div>
+  </div>
+</section>
+
+<section id="catalog" class="pb-24">
+  <div class="max-w-6xl mx-auto px-4">
+    <div id="grid" class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+      
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="boostme" data-category="Salud Mental">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#2E7D92,#A8DADC)">B</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">BoostMe</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(46,125,146,0.15);color:#2E7D92">Salud Mental</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Autoestima diaria con ejercicios guiados</p>
+        <a href="apps/boostme_app.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#2E7D92">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="calmapp" data-category="Salud Mental">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#2E7D92,#A8DADC)">C</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">CalmApp</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(46,125,146,0.15);color:#2E7D92">Salud Mental</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Relajacion y tecnicas CBT en tu bolsillo</p>
+        <a href="apps/calmapp_app.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#2E7D92">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="calmkids" data-category="Salud Mental">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#2E7D92,#A8DADC)">C</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">CalmKids</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(46,125,146,0.15);color:#2E7D92">Salud Mental</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Meditacion y sonidos calmantes para ninos</p>
+        <a href="apps/calmkids_app.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#2E7D92">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="focusblink" data-category="Salud Mental">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#2E7D92,#A8DADC)">F</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">FocusBlink</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(46,125,146,0.15);color:#2E7D92">Salud Mental</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Rompe la fatiga visual con pausas inteligentes</p>
+        <a href="apps/focusblink.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#2E7D92">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="kidmind" data-category="Salud Mental">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#2E7D92,#A8DADC)">K</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">KidMind</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(46,125,146,0.15);color:#2E7D92">Salud Mental</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Guia emocional para padres y ninos</p>
+        <a href="apps/kidmind_app.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#2E7D92">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="mindcare" data-category="Salud Mental">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#2E7D92,#A8DADC)">M</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">MindCare</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(46,125,146,0.15);color:#2E7D92">Salud Mental</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Bienestar mental con check-ins guiados</p>
+        <a href="apps/mindcare_app.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#2E7D92">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="mindshift" data-category="Salud Mental">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#2E7D92,#A8DADC)">M</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">MindShift</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(46,125,146,0.15);color:#2E7D92">Salud Mental</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Terapia cognitiva para ansiedad y estres</p>
+        <a href="apps/mindshift_app.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#2E7D92">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="socialskills" data-category="Salud Mental">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#2E7D92,#A8DADC)">S</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">SocialSkills</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(46,125,146,0.15);color:#2E7D92">Salud Mental</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Fortalece tu confianza social con roleplay</p>
+        <a href="apps/socialskills_app.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#2E7D92">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="tremor test" data-category="Salud Mental">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#2E7D92,#A8DADC)">T</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">Tremor Test</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(46,125,146,0.15);color:#2E7D92">Salud Mental</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Evalua temblores finos y registra evolucion</p>
+        <a href="apps/tremortest.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#2E7D92">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="vr therapy" data-category="Salud Mental">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#2E7D92,#A8DADC)">V</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">VR Therapy</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(46,125,146,0.15);color:#2E7D92">Salud Mental</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Terapia asistida por realidad virtual</p>
+        <a href="apps/vrtherapy_app.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#2E7D92">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="zenmind" data-category="Salud Mental">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#2E7D92,#A8DADC)">Z</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">ZenMind</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(46,125,146,0.15);color:#2E7D92">Salud Mental</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Mindfulness y respiracion para tu dia a dia</p>
+        <a href="apps/zenmind_app.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#2E7D92">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="fitbuddy" data-category="Fitness">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#FF5722,#FF9800)">F</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">FitBuddy</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(255,87,34,0.15);color:#FF5722">Fitness</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Entrenamientos adaptativos con sync de wearables</p>
+        <a href="apps/fitbuddy_app.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#FF5722">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="runmaster" data-category="Fitness">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#FF5722,#FF9800)">R</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">RunMaster</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(255,87,34,0.15);color:#FF5722">Fitness</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Plan de running con ritmo y progreso inteligente</p>
+        <a href="apps/runmaster_app.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#FF5722">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="sleeptracker" data-category="Fitness">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#FF5722,#FF9800)">S</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">SleepTracker</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(255,87,34,0.15);color:#FF5722">Fitness</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Analiza tu sueno y mejora tu descanso</p>
+        <a href="apps/sleeptracker_app.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#FF5722">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="trailexplorer" data-category="Fitness">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#FF5722,#FF9800)">T</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">TrailExplorer</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(255,87,34,0.15);color:#FF5722">Fitness</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Descubre rutas de senderismo con mapas y alertas</p>
+        <a href="apps/trailexplorer_app.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#FF5722">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="workout log" data-category="Fitness">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#FF5722,#FF9800)">W</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">Workout Log</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(255,87,34,0.15);color:#FF5722">Fitness</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Registro de entrenamientos con duracion e intensidad</p>
+        <a href="apps/workout_log.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#FF5722">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="yogaflow" data-category="Fitness">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#FF5722,#FF9800)">Y</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">YogaFlow</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(255,87,34,0.15);color:#FF5722">Fitness</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Yoga guiado con seguimiento de posturas</p>
+        <a href="apps/yogaflow_app.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#FF5722">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="yogaflow levels" data-category="Fitness">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#FF5722,#FF9800)">Y</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">YogaFlow Levels</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(255,87,34,0.15);color:#FF5722">Fitness</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Yoga progresivo desde principiante hasta avanzado</p>
+        <a href="apps/yogaflow_levels_app.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#FF5722">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="couplefinance" data-category="Finanzas">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#1565C0,#00BFA5)">C</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">CoupleFinance</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(21,101,192,0.15);color:#1565C0">Finanzas</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Gastos y metas compartidos para parejas</p>
+        <a href="apps/couplefinance_app.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#1565C0">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="finantrack" data-category="Finanzas">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#1565C0,#00BFA5)">F</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">FinanTrack</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(21,101,192,0.15);color:#1565C0">Finanzas</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Control financiero personal con insights claros</p>
+        <a href="apps/finantrack_app.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#1565C0">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="kidfinance" data-category="Finanzas">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#1565C0,#00BFA5)">K</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">KidFinance</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(21,101,192,0.15);color:#1565C0">Finanzas</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Educacion financiera divertida para ninos</p>
+        <a href="apps/kidfinance_app.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#1565C0">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="paylat" data-category="Finanzas">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#1565C0,#00BFA5)">P</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">PayLat</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(21,101,192,0.15);color:#1565C0">Finanzas</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Neobanco digital para Latinoamerica</p>
+        <a href="apps/paylat_neobank.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#1565C0">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="pocket expenses" data-category="Finanzas">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#1565C0,#00BFA5)">P</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">Pocket Expenses</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(21,101,192,0.15);color:#1565C0">Finanzas</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Gastos personales organizados en segundos</p>
+        <a href="apps/pocket_expenses.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#1565C0">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="receipt splitter" data-category="Finanzas">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#1565C0,#00BFA5)">R</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">Receipt Splitter</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(21,101,192,0.15);color:#1565C0">Finanzas</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Divide cuentas y propinas entre amigos sin calculos</p>
+        <a href="apps/receipt_splitter.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#1565C0">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="subscription tracker" data-category="Finanzas">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#1565C0,#00BFA5)">S</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">Subscription Tracker</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(21,101,192,0.15);color:#1565C0">Finanzas</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Controla tus suscripciones y renovaciones</p>
+        <a href="apps/subscription_tracker.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#1565C0">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="chefin" data-category="Alimentacion">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#FF8C00,#4CAF50)">C</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">Chefin</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(255,140,0,0.15);color:#FF8C00">Alimentacion</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Aprende a cocinar desde cero con videos guiados</p>
+        <a href="apps/chefin_app.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#FF8C00">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="cookmaster" data-category="Alimentacion">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#FF8C00,#4CAF50)">C</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">CookMaster</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(255,140,0,0.15);color:#FF8C00">Alimentacion</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Recetas personalizadas con tu despensa</p>
+        <a href="apps/cookmaster_app.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#FF8C00">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="healthybites" data-category="Alimentacion">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#FF8C00,#4CAF50)">H</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">HealthyBites</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(255,140,0,0.15);color:#FF8C00">Alimentacion</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Recetas y plan nutricional adaptado a ti</p>
+        <a href="apps/healthybites_app.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#FF8C00">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="kitchenhelper" data-category="Alimentacion">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#FF8C00,#4CAF50)">K</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">KitchenHelper</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(255,140,0,0.15);color:#FF8C00">Alimentacion</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Cocina paso a paso con tecnicas profesionales</p>
+        <a href="apps/kitchenhelper_app.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#FF8C00">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="meal planner" data-category="Alimentacion">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#FF8C00,#4CAF50)">M</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">Meal Planner</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(255,140,0,0.15);color:#FF8C00">Alimentacion</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Planifica comidas y recetas sin complicaciones</p>
+        <a href="apps/meal_planner.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#FF8C00">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="nutritrack" data-category="Alimentacion">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#FF8C00,#4CAF50)">N</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">NutriTrack</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(255,140,0,0.15);color:#FF8C00">Alimentacion</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Plan diario con macros y metas personalizadas</p>
+        <a href="apps/nutritrack_app.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#FF8C00">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="recipefinder" data-category="Alimentacion">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#FF8C00,#4CAF50)">R</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">RecipeFinder</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(255,140,0,0.15);color:#FF8C00">Alimentacion</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Descubre recetas con lo que tienes en la nevera</p>
+        <a href="apps/recipefinder_app.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#FF8C00">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="cleaning checklist" data-category="Productividad">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#0D47A1,#448AFF)">C</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">Cleaning Checklist</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(13,71,161,0.15);color:#0D47A1">Productividad</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Checklist de limpieza con frecuencias claras</p>
+        <a href="apps/cleaning_checklist.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#0D47A1">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="creativehub" data-category="Productividad">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#0D47A1,#448AFF)">C</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">CreativeHub</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(13,71,161,0.15);color:#0D47A1">Productividad</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Herramientas creativas y galeria colaborativa</p>
+        <a href="apps/creativehub_app.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#0D47A1">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="daily journal" data-category="Productividad">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#0D47A1,#448AFF)">D</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">Daily Journal</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(13,71,161,0.15);color:#0D47A1">Productividad</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Diario personal con estados de animo y notas</p>
+        <a href="apps/daily_journal.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#0D47A1">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="event planner" data-category="Productividad">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#0D47A1,#448AFF)">E</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">Event Planner</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(13,71,161,0.15);color:#0D47A1">Productividad</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Agenda eventos con fecha, hora y ubicacion</p>
+        <a href="apps/event_planner.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#0D47A1">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="eventmaster" data-category="Productividad">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#0D47A1,#448AFF)">E</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">EventMaster</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(13,71,161,0.15);color:#0D47A1">Productividad</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Organizador total de eventos y proveedores</p>
+        <a href="apps/eventmaster_app.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#0D47A1">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="eventonline" data-category="Productividad">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#0D47A1,#448AFF)">E</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">EventOnline</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(13,71,161,0.15);color:#0D47A1">Productividad</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Webinars y reuniones virtuales con engagement en vivo</p>
+        <a href="apps/eventonline_app.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#0D47A1">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="goal compass" data-category="Productividad">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#0D47A1,#448AFF)">G</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">Goal Compass</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(13,71,161,0.15);color:#0D47A1">Productividad</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Metas con fecha y progreso real, todo offline</p>
+        <a href="apps/goal_compass.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#0D47A1">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="habit streaks" data-category="Productividad">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#0D47A1,#448AFF)">H</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">Habit Streaks</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(13,71,161,0.15);color:#0D47A1">Productividad</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Hábitos con rachas que motivan cada dia</p>
+        <a href="apps/habit_streaks.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#0D47A1">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="myproject" data-category="Productividad">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#0D47A1,#448AFF)">M</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">MyProject</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(13,71,161,0.15);color:#0D47A1">Productividad</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Planifica tus proyectos personales con hitos</p>
+        <a href="apps/myproject_app.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#0D47A1">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="notevault" data-category="Productividad">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#0D47A1,#448AFF)">N</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">NoteVault</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(13,71,161,0.15);color:#0D47A1">Productividad</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Notas con busqueda, etiquetas y pines</p>
+        <a href="apps/notevault.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#0D47A1">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="shopping smartlist" data-category="Productividad">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#0D47A1,#448AFF)">S</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">Shopping SmartList</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(13,71,161,0.15);color:#0D47A1">Productividad</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Lista de compras inteligente por categorias</p>
+        <a href="apps/shopping_smartlist.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#0D47A1">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="taskboard pro" data-category="Productividad">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#0D47A1,#448AFF)">T</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">TaskBoard Pro</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(13,71,161,0.15);color:#0D47A1">Productividad</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Tablero de tareas con prioridades y estados</p>
+        <a href="apps/taskboard_pro.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#0D47A1">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="taskmaster" data-category="Productividad">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#0D47A1,#448AFF)">T</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">TaskMaster</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(13,71,161,0.15);color:#0D47A1">Productividad</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Cabina de productividad con enfoque y metas</p>
+        <a href="apps/taskmaster_app.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#0D47A1">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="teamproject" data-category="Productividad">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#0D47A1,#448AFF)">T</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">TeamProject</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(13,71,161,0.15);color:#0D47A1">Productividad</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Gestion de proyectos de equipo de extremo a extremo</p>
+        <a href="apps/teamproject_app.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#0D47A1">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="travel packing list" data-category="Productividad">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#0D47A1,#448AFF)">T</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">Travel Packing List</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(13,71,161,0.15);color:#0D47A1">Productividad</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Lista de equipaje inteligente por categorias</p>
+        <a href="apps/travel_packing_list.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#0D47A1">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="autismlearn" data-category="Educacion">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#6200EA,#FF6D00)">A</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">AutismLearn</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(98,0,234,0.15);color:#6200EA">Educacion</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Juegos adaptados para ninos en el espectro autista</p>
+        <a href="apps/autismlearn_app.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#6200EA">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="book tracker" data-category="Educacion">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#6200EA,#FF6D00)">B</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">Book Tracker</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(98,0,234,0.15);color:#6200EA">Educacion</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Seguimiento de lectura con progreso real</p>
+        <a href="apps/book_tracker.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#6200EA">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="brainboost" data-category="Educacion">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#6200EA,#FF6D00)">B</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">BrainBoost</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(98,0,234,0.15);color:#6200EA">Educacion</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Juegos de logica para entrenar tu mente</p>
+        <a href="apps/brainboost_app.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#6200EA">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="codelab" data-category="Educacion">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#6200EA,#FF6D00)">C</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">CodeLab</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(98,0,234,0.15);color:#6200EA">Educacion</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Aprende a programar con proyectos reales</p>
+        <a href="apps/codelab_app.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#6200EA">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="factcheck" data-category="Educacion">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#6200EA,#FF6D00)">F</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">FactCheck</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(98,0,234,0.15);color:#6200EA">Educacion</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Verifica fuentes y detecta desinformacion</p>
+        <a href="apps/factcheck_app.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#6200EA">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="learnfun" data-category="Educacion">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#6200EA,#FF6D00)">L</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">LearnFun</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(98,0,234,0.15);color:#6200EA">Educacion</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Aprendizaje adaptativo y divertido para ninos</p>
+        <a href="apps/learnfun_app.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#6200EA">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="linguaar" data-category="Educacion">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#6200EA,#FF6D00)">L</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">LinguaAR</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(98,0,234,0.15);color:#6200EA">Educacion</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Aprende idiomas con realidad aumentada inmersiva</p>
+        <a href="apps/linguaar_app.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#6200EA">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="musicmaster" data-category="Educacion">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#6200EA,#FF6D00)">M</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">MusicMaster</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(98,0,234,0.15);color:#6200EA">Educacion</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Clases de musica con partituras interactivas</p>
+        <a href="apps/musicmaster_app.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#6200EA">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="mylibrary" data-category="Educacion">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#6200EA,#FF6D00)">M</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">MyLibrary</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(98,0,234,0.15);color:#6200EA">Educacion</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Cataloga tus libros y descubre tu proxima lectura</p>
+        <a href="apps/mylibrary_app.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#6200EA">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="negotia" data-category="Educacion">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#6200EA,#FF6D00)">N</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">Negotia</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(98,0,234,0.15);color:#6200EA">Educacion</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Entrenador de negociacion con casos reales</p>
+        <a href="apps/negotia_app.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#6200EA">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="photoguide" data-category="Educacion">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#6200EA,#FF6D00)">P</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">PhotoGuide</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(98,0,234,0.15);color:#6200EA">Educacion</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Lecciones y retos para dominar la fotografia</p>
+        <a href="apps/photoguide_app.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#6200EA">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="signlang" data-category="Educacion">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#6200EA,#FF6D00)">S</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">SignLang</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(98,0,234,0.15);color:#6200EA">Educacion</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Aprende lengua de senas con lecciones interactivas</p>
+        <a href="apps/signlang_app.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#6200EA">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="writemaster" data-category="Educacion">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#6200EA,#FF6D00)">W</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">WriteMaster</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(98,0,234,0.15);color:#6200EA">Educacion</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Mejora tu escritura con feedback inteligente</p>
+        <a href="apps/writemaster_app.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#6200EA">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="eco track" data-category="Estilo de Vida">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#2E7D32,#FFC107)">E</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">Eco Track</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(46,125,50,0.15);color:#2E7D32">Estilo de Vida</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Lleva tu huella ecologica bajo control</p>
+        <a href="apps/eco_track.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#2E7D32">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="ecotrack" data-category="Estilo de Vida">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#2E7D32,#FFC107)">E</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">EcoTrack</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(46,125,50,0.15);color:#2E7D32">Estilo de Vida</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Mide y reduce tu huella con tips diarios</p>
+        <a href="apps/ecotrack_app.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#2E7D32">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="greenlife" data-category="Estilo de Vida">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#2E7D32,#FFC107)">G</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">GreenLife</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(46,125,50,0.15);color:#2E7D32">Estilo de Vida</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Vida sostenible con habitos medibles</p>
+        <a href="apps/greenlife_app.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#2E7D32">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="medai" data-category="Estilo de Vida">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#2E7D32,#FFC107)">M</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">MedAI</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(46,125,50,0.15);color:#2E7D32">Estilo de Vida</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Asistente medico personal con IA</p>
+        <a href="apps/medai_app.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#2E7D32">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="meditrack" data-category="Estilo de Vida">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#2E7D32,#FFC107)">M</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">MediTrack</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(46,125,50,0.15);color:#2E7D32">Estilo de Vida</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Agenda medica y salud bajo control</p>
+        <a href="apps/meditrack_app.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#2E7D32">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="medremind" data-category="Estilo de Vida">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#2E7D32,#FFC107)">M</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">MedRemind</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(46,125,50,0.15);color:#2E7D32">Estilo de Vida</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Recordatorios y reportes de medicacion</p>
+        <a href="apps/medremind_app.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#2E7D32">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="petcare" data-category="Estilo de Vida">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#2E7D32,#FFC107)">P</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">PetCare</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(46,125,50,0.15);color:#2E7D32">Estilo de Vida</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Lleva la salud y rutina de tu mascota al dia</p>
+        <a href="apps/petcare_app.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#2E7D32">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="plant pal" data-category="Estilo de Vida">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#2E7D32,#FFC107)">P</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">Plant Pal</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(46,125,50,0.15);color:#2E7D32">Estilo de Vida</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Cuida tus plantas con recordatorios simples</p>
+        <a href="apps/plant_pal.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#2E7D32">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="seniorcare" data-category="Estilo de Vida">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#2E7D32,#FFC107)">S</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">SeniorCare</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(46,125,50,0.15);color:#2E7D32">Estilo de Vida</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Acompanamiento diario y seguridad para mayores</p>
+        <a href="apps/seniorcare_app.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#2E7D32">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="skinmole tracker" data-category="Estilo de Vida">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#2E7D32,#FFC107)">S</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">SkinMole Tracker</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(46,125,50,0.15);color:#2E7D32">Estilo de Vida</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Monitorea lunares y cambios en tu piel</p>
+        <a href="apps/skinmole_tracker.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#2E7D32">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="tripplanner" data-category="Estilo de Vida">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#2E7D32,#FFC107)">T</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">TripPlanner</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(46,125,50,0.15);color:#2E7D32">Estilo de Vida</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Crea itinerarios y controla tu presupuesto de viaje</p>
+        <a href="apps/tripplanner_app.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#2E7D32">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="wanderguide" data-category="Estilo de Vida">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#2E7D32,#FFC107)">W</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">WanderGuide</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(46,125,50,0.15);color:#2E7D32">Estilo de Vida</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Mapas y recomendaciones locales para tus viajes</p>
+        <a href="apps/wanderguide_app.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#2E7D32">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="weatherguard" data-category="Estilo de Vida">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#2E7D32,#FFC107)">W</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">WeatherGuard</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(46,125,50,0.15);color:#2E7D32">Estilo de Vida</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Clima y alertas de emergencia confiables</p>
+        <a href="apps/weatherguard_app.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#2E7D32">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="ai music creator" data-category="Musica">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#263238,#00E676)">A</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">AI Music Creator</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(38,50,56,0.15);color:#263238">Musica</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Genera musica local sin APIs externas</p>
+        <a href="apps/aimusiccreator.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#263238">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="bpm matcher" data-category="Musica">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#263238,#00E676)">B</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">BPM Matcher</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(38,50,56,0.15);color:#263238">Musica</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Encuentra el tempo perfecto para tus mezclas</p>
+        <a href="apps/bpm_matcher.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#263238">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="hum to tabs" data-category="Musica">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#263238,#00E676)">H</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">Hum to Tabs</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(38,50,56,0.15);color:#263238">Musica</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Tararea una melodia y obten tablaturas al instante</p>
+        <a href="apps/humtotabs.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#263238">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="pro audio eq" data-category="Musica">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#263238,#00E676)">P</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">Pro Audio EQ</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(38,50,56,0.15);color:#263238">Musica</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Ecualizador y mastering con 10 bandas</p>
+        <a href="apps/pro_audio_eq.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#263238">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="promix dj studio" data-category="Musica">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#263238,#00E676)">P</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">ProMix DJ Studio</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(38,50,56,0.15);color:#263238">Musica</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">DJ studio con dual-deck y efectos</p>
+        <a href="apps/dj_pro_mobile.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#263238">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="retro amp" data-category="Musica">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#263238,#00E676)">R</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">Retro AMP</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(38,50,56,0.15);color:#263238">Musica</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Reproductor retro con skins y visualizador</p>
+        <a href="apps/retro_amp.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#263238">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="virtual piano" data-category="Musica">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#263238,#00E676)">V</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">Virtual Piano</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(38,50,56,0.15);color:#263238">Musica</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Piano tactil con multi-octava y audio real</p>
+        <a href="apps/piano_app.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#263238">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="anti eavesdrop" data-category="Herramientas">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#455A64,#29B6F6)">A</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">Anti Eavesdrop</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(69,90,100,0.15);color:#455A64">Herramientas</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Protege tus conversaciones de escuchas no deseadas</p>
+        <a href="apps/anti_eavesdrop.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#455A64">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="applocker dynamic" data-category="Herramientas">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#455A64,#29B6F6)">A</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">AppLocker Dynamic</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(69,90,100,0.15);color:#455A64">Herramientas</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Bloqueo adaptativo de apps con reglas inteligentes</p>
+        <a href="apps/applocker_dynamic.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#455A64">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="ar home" data-category="Herramientas">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#455A64,#29B6F6)">A</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">AR Home</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(69,90,100,0.15);color:#455A64">Herramientas</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Visualiza muebles y decoracion en tu hogar con AR</p>
+        <a href="apps/arhome_app.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#455A64">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="barometro y altimetro" data-category="Herramientas">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#455A64,#29B6F6)">B</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">Barometro y Altimetro</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(69,90,100,0.15);color:#455A64">Herramientas</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Lecturas precisas de presion y altitud en tu bolsillo</p>
+        <a href="apps/barometer_altimeter.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#455A64">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="car care log" data-category="Herramientas">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#455A64,#29B6F6)">C</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">Car Care Log</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(69,90,100,0.15);color:#455A64">Herramientas</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Historial de mantenimientos de tu vehiculo</p>
+        <a href="apps/car_care_log.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#455A64">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="carfix" data-category="Herramientas">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#455A64,#29B6F6)">C</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">CarFix</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(69,90,100,0.15);color:#455A64">Herramientas</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Diagnostica fallas de tu auto y encuentra ayuda</p>
+        <a href="apps/carfix_app.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#455A64">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="coin counter ai" data-category="Herramientas">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#455A64,#29B6F6)">C</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">Coin Counter AI</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(69,90,100,0.15);color:#455A64">Herramientas</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Cuenta monedas automaticamente con IA</p>
+        <a href="apps/coin_counter_ai.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#455A64">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="dashboard ar" data-category="Herramientas">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#455A64,#29B6F6)">D</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">Dashboard AR</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(69,90,100,0.15);color:#455A64">Herramientas</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Panel de conduccion aumentada para tu auto</p>
+        <a href="apps/dashboard_ar.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#455A64">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="fake shutdown" data-category="Herramientas">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#455A64,#29B6F6)">F</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">Fake Shutdown</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(69,90,100,0.15);color:#455A64">Herramientas</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Simula el apagado de tu dispositivo al instante</p>
+        <a href="apps/fake_shutdown.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#455A64">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="frequency counter" data-category="Herramientas">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#455A64,#29B6F6)">F</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">Frequency Counter</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(69,90,100,0.15);color:#455A64">Herramientas</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Analizador de frecuencias en tiempo real</p>
+        <a href="apps/frequency_counter.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#455A64">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="level laser ar" data-category="Herramientas">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#455A64,#29B6F6)">L</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">Level Laser AR</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(69,90,100,0.15);color:#455A64">Herramientas</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Nivel laser virtual con realidad aumentada</p>
+        <a href="apps/level_laser_ar.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#455A64">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="localdrop" data-category="Herramientas">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#455A64,#29B6F6)">L</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">LocalDrop</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(69,90,100,0.15);color:#455A64">Herramientas</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Comparte archivos al instante en tu red local</p>
+        <a href="apps/localdrop.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#455A64">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="matter" data-category="Herramientas">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#455A64,#29B6F6)">M</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">Matter</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(69,90,100,0.15);color:#455A64">Herramientas</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Inventario visual del mundo fisico</p>
+        <a href="apps/matter_app.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#455A64">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="protomaker" data-category="Herramientas">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#455A64,#29B6F6)">P</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">ProtoMaker</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(69,90,100,0.15);color:#455A64">Herramientas</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Prototipa ideas con herramientas visuales rapidas</p>
+        <a href="apps/protomaker_app.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#455A64">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="screen obscure" data-category="Herramientas">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#455A64,#29B6F6)">S</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">Screen Obscure</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(69,90,100,0.15);color:#455A64">Herramientas</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Privacidad visual sobre tu pantalla en segundos</p>
+        <a href="apps/screen_obscure.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#455A64">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="sign translator ar" data-category="Herramientas">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#455A64,#29B6F6)">S</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">Sign Translator AR</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(69,90,100,0.15);color:#455A64">Herramientas</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Traduce senas en tiempo real con AR</p>
+        <a href="apps/sign_translator_ar.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#455A64">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="solarpath ar" data-category="Herramientas">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#455A64,#29B6F6)">S</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">SolarPath AR</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(69,90,100,0.15);color:#455A64">Herramientas</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Planifica instalaciones solares con realidad aumentada</p>
+        <a href="apps/solarpath_ar.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#455A64">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="speaker cleaner" data-category="Herramientas">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#455A64,#29B6F6)">S</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">Speaker Cleaner</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(69,90,100,0.15);color:#455A64">Herramientas</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Limpia los altavoces eliminando polvo y humedad</p>
+        <a href="apps/speakercleaner.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#455A64">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="thread count" data-category="Herramientas">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#455A64,#29B6F6)">T</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">Thread Count</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(69,90,100,0.15);color:#455A64">Herramientas</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Mide la densidad de hilos en tejidos con precision</p>
+        <a href="apps/threadcount.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#455A64">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="wallscanner" data-category="Herramientas">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#455A64,#29B6F6)">W</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">WallScanner</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(69,90,100,0.15);color:#455A64">Herramientas</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Detecta cables y tuberias ocultos en paredes</p>
+        <a href="apps/wallscanner.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#455A64">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="warranty tracker" data-category="Herramientas">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#455A64,#29B6F6)">W</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">Warranty Tracker</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(69,90,100,0.15);color:#455A64">Herramientas</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Seguimiento de garantias y vencimientos</p>
+        <a href="apps/warranty_tracker.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#455A64">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="myspace reimagined" data-category="Social">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#E91E63,#FF4081)">M</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">MySpace Reimagined</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(233,30,99,0.15);color:#E91E63">Social</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Red social con glassmorphism y animaciones fluidas</p>
+        <a href="apps/myspace_reimagined.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#E91E63">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="networkpro" data-category="Social">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#E91E63,#FF4081)">N</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">NetworkPro</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(233,30,99,0.15);color:#E91E63">Social</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Networking profesional con oportunidades reales</p>
+        <a href="apps/networkpro_app.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#E91E63">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="periodico pro" data-category="Social">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#E91E63,#FF4081)">P</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">Periodico Pro</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(233,30,99,0.15);color:#E91E63">Social</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Titulares RSS y fuentes curadas en un solo feed</p>
+        <a href="apps/periodico_app.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#E91E63">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="popcorn" data-category="Social">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#E91E63,#FF4081)">P</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">Popcorn</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(233,30,99,0.15);color:#E91E63">Social</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Streaming con descargas offline y reproduccion VLC</p>
+        <a href="apps/popcorn_app.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#E91E63">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="securechat" data-category="Social">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#E91E63,#FF4081)">S</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">SecureChat</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(233,30,99,0.15);color:#E91E63">Social</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Mensajeria con cifrado E2EE profesional</p>
+        <a href="apps/whatsapp_clone.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#E91E63">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="shortvideos" data-category="Social">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#E91E63,#FF4081)">S</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">ShortVideos</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(233,30,99,0.15);color:#E91E63">Social</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Plataforma de videos cortos con feed infinito</p>
+        <a href="apps/tiktok_clone.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#E91E63">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="unova social" data-category="Social">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#E91E63,#FF4081)">U</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">Unova Social</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(233,30,99,0.15);color:#E91E63">Social</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Red social centrada en comunidades activas</p>
+        <a href="apps/unova_social.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#E91E63">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="hospedaje.co" data-category="Ecommerce">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#00ACC1,#FFAB00)">H</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">Hospedaje.co</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(0,172,193,0.15);color:#00ACC1">Ecommerce</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Metabuscador de hoteles para Colombia</p>
+        <a href="apps/hospedajeco.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#00ACC1">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="latamgo" data-category="Ecommerce">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#00ACC1,#FFAB00)">L</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">LatamGo</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(0,172,193,0.15);color:#00ACC1">Ecommerce</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Delivery todo-en-uno para Latinoamerica</p>
+        <a href="apps/latamgo_delivery.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#00ACC1">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="marketco" data-category="Ecommerce">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#00ACC1,#FFAB00)">M</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">MarketCO</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(0,172,193,0.15);color:#00ACC1">Ecommerce</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Marketplace P2P para Colombia</p>
+        <a href="apps/marketco_marketplace.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#00ACC1">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="mercadonova" data-category="Ecommerce">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#00ACC1,#FFAB00)">M</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">MercadoNova</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(0,172,193,0.15);color:#00ACC1">Ecommerce</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Plataforma e-commerce pensada para LatAm</p>
+        <a href="apps/mercadonova.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#00ACC1">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="portapro" data-category="Ecommerce">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#00ACC1,#FFAB00)">P</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">PortaPro</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(0,172,193,0.15);color:#00ACC1">Ecommerce</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Portafolio profesional con branding propio</p>
+        <a href="apps/portapro_app.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#00ACC1">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="alfa computacional" data-category="Juegos">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#7B1FA2,#FFEB3B)">A</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">Alfa Computacional</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(123,31,162,0.15);color:#7B1FA2">Juegos</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Analitica deportiva con Dixon-Coles y Kelly</p>
+        <a href="apps/alfa_computacional.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#7B1FA2">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="dados flutter" data-category="Juegos">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#7B1FA2,#FFEB3B)">D</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">Dados Flutter</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(123,31,162,0.15);color:#7B1FA2">Juegos</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Lanza dados y compila tu APK localmente</p>
+        <a href="apps/dados_flutter.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#7B1FA2">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="gravity dodger" data-category="Juegos">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#7B1FA2,#FFEB3B)">G</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">Gravity Dodger</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(123,31,162,0.15);color:#7B1FA2">Juegos</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Arcade de reflejos con fisica invertida</p>
+        <a href="apps/gravity_dodger.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#7B1FA2">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="antigravity driver" data-category="Negocios">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#37474F,#FFC400)">A</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">AntiGravity Driver</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(55,71,79,0.15);color:#37474F">Negocios</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Conductores potenciados con IA y ML</p>
+        <a href="apps/driver.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#37474F">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="antigravity rider" data-category="Negocios">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#37474F,#FFC400)">A</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">AntiGravity Rider</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(55,71,79,0.15);color:#37474F">Negocios</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Pasajeros de nueva generacion con IA</p>
+        <a href="apps/rider.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#37474F">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="antigravity superapp" data-category="Negocios">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#37474F,#FFC400)">A</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">AntiGravity SuperApp</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(55,71,79,0.15);color:#37474F">Negocios</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Rider y driver unificados con modo demo</p>
+        <a href="apps/superapp.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#37474F">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="client crm lite" data-category="Negocios">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#37474F,#FFC400)">C</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">Client CRM Lite</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(55,71,79,0.15);color:#37474F">Negocios</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Mini CRM ligero para clientes y seguimientos</p>
+        <a href="apps/client_crm_lite.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#37474F">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="hotelmaster" data-category="Negocios">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#37474F,#FFC400)">H</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">HotelMaster</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(55,71,79,0.15);color:#37474F">Negocios</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Gestion integral para pequenas hostelerias</p>
+        <a href="apps/hotelmaster_app.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#37474F">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="indriver demo" data-category="Negocios">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#37474F,#FFC400)">I</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">InDriver Demo</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(55,71,79,0.15);color:#37474F">Negocios</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Demo completa del ecosistema rider-driver</p>
+        <a href="apps/demo.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#37474F">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="indriver driver" data-category="Negocios">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#37474F,#FFC400)">I</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">InDriver Driver</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(55,71,79,0.15);color:#37474F">Negocios</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Acepta viajes y gestiona tu jornada</p>
+        <a href="apps/driver_app.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#37474F">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="indriver rider" data-category="Negocios">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#37474F,#FFC400)">I</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">InDriver Rider</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(55,71,79,0.15);color:#37474F">Negocios</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Pide viajes con tarifas negociables</p>
+        <a href="apps/rider_app.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#37474F">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="inventory manager" data-category="Negocios">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#37474F,#FFC400)">I</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">Inventory Manager</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(55,71,79,0.15);color:#37474F">Negocios</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Inventario offline con minimos y ubicaciones</p>
+        <a href="apps/inventory_manager.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#37474F">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    <article class="app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700" data-name="service ticket desk" data-category="Negocios">
+      <div class="p-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span class="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl" style="background:linear-gradient(135deg,#37474F,#FFC400)">S</span>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 dark:text-white leading-tight">Service Ticket Desk</h3>
+            <span class="inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full" style="background:rgba(55,71,79,0.15);color:#37474F">Negocios</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">Gestor simple de tickets de soporte</p>
+        <a href="apps/service_ticket_desk.html" class="mt-4 inline-flex items-center gap-1 font-semibold text-sm" style="color:#37474F">
+          Ver mas
+          <svg xmlns='http://www.w3.org/2000/svg' class='w-4 h-4' fill='none' viewBox='0 0 24 24' stroke='currentColor' stroke-width='2'><path stroke-linecap='round' stroke-linejoin='round' d='M9 5l7 7-7 7'/></svg>
+        </a>
+      </div>
+    </article>
+    </div>
+    <p id="empty" class="hidden text-center text-slate-500 py-12">No encontramos apps con esos criterios.</p>
+  </div>
+</section>
+
+<footer id="contact" class="bg-slate-900 text-slate-300 py-12">
+  <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8">
+    <div>
+      <div class="flex items-center gap-3">
+        <span class="w-9 h-9 rounded-xl flex items-center justify-center text-white font-extrabold" style="background:linear-gradient(135deg,#7C3AED,#06B6D4)">D</span>
+        <span class="text-white font-extrabold">DreamLabsTech</span>
+      </div>
+      <p class="mt-4 text-sm opacity-80">Estudio de producto movil enfocado en experiencia, calidad y privacidad.</p>
+    </div>
+    <div>
+      <h5 class="text-white font-semibold mb-3">Catalogo</h5>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#catalog" class="hover:underline">Todas las apps</a></li>
+        <li><a href="#categories" class="hover:underline">Categorias</a></li>
+        <li><a href="./privacy.html" class="hover:underline">Politica de privacidad</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5 class="text-white font-semibold mb-3">Contacto</h5>
+      <ul class="space-y-2 text-sm opacity-80">
+        <li>contacto@dreamlabstech.io</li>
+        <li>soporte@dreamlabstech.io</li>
+        <li>&copy; 2026 DreamLabsTech. Todos los derechos reservados.</li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script>
+const cards = Array.from(document.querySelectorAll('.app-card'));
+const search = document.getElementById('search');
+const empty = document.getElementById('empty');
+let activeCat = 'all';
+
+function applyFilters() {
+  const q = (search.value || '').toLowerCase();
+  let visible = 0;
+  cards.forEach(c => {
+    const name = c.dataset.name;
+    const cat = c.dataset.category;
+    const matchesCat = activeCat === 'all' || cat === activeCat;
+    const matchesQuery = !q || name.includes(q);
+    const show = matchesCat && matchesQuery;
+    c.style.display = show ? '' : 'none';
+    if (show) visible++;
+  });
+  empty.classList.toggle('hidden', visible > 0);
+}
+
+document.querySelectorAll('.cat-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    activeCat = btn.dataset.cat;
+    applyFilters();
+  });
+});
+search.addEventListener('input', applyFilters);
+
+function toggleTheme() {
+  const html = document.documentElement;
+  html.classList.toggle('dark');
+  localStorage.setItem('dlt-theme', html.classList.contains('dark') ? 'dark' : 'light');
+}
+</script>
+</body>
+</html>
