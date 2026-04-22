@@ -5,17 +5,17 @@
       <stop offset="100%" stop-color="#A8DADC"/>
     </linearGradient>
     <radialGradient id="glow_tremortest" cx="50%" cy="52%" r="42%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.55"/>
-      <stop offset="60%" stop-color="#ffffff" stop-opacity="0.10"/>
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.35"/>
+      <stop offset="60%" stop-color="#ffffff" stop-opacity="0.08"/>
       <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
     </radialGradient>
     <filter id="shadow_tremortest" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.18"/>
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.22"/>
     </filter>
   </defs>
   <rect x="0" y="0" width="512" height="512" rx="96" ry="96" fill="url(#bg_tremortest)"/>
   <circle cx="256" cy="266" r="180" fill="url(#glow_tremortest)"/>
-  <text x="256" y="320" text-anchor="middle"
-        font-family="Apple Color Emoji, Segoe UI Emoji, Noto Color Emoji, Twemoji Mozilla, EmojiOne Color, Symbola, sans-serif"
-        font-size="280" filter="url(#shadow_tremortest)">🖐</text>
+  <g transform="translate(102.4, 102.4) scale(1.2)" fill="white" filter="url(#shadow_tremortest)">
+    <path d="M178,40c-20.65,0-38.73,8.88-50,23.89C116.73,48.88,98.65,40,78,40a62.07,62.07,0,0,0-62,62c0,78,103.79,135.48,108.21,137.89a8,8,0,0,0,7.58,0C136.21,237.48,240,180,240,102A62.07,62.07,0,0,0,178,40Z"/>
+  </g>
 </svg>

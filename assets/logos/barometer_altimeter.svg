@@ -5,17 +5,17 @@
       <stop offset="100%" stop-color="#29B6F6"/>
     </linearGradient>
     <radialGradient id="glow_barometer_altimeter" cx="50%" cy="52%" r="42%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.55"/>
-      <stop offset="60%" stop-color="#ffffff" stop-opacity="0.10"/>
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.35"/>
+      <stop offset="60%" stop-color="#ffffff" stop-opacity="0.08"/>
       <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
     </radialGradient>
     <filter id="shadow_barometer_altimeter" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.18"/>
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.22"/>
     </filter>
   </defs>
   <rect x="0" y="0" width="512" height="512" rx="96" ry="96" fill="url(#bg_barometer_altimeter)"/>
   <circle cx="256" cy="266" r="180" fill="url(#glow_barometer_altimeter)"/>
-  <text x="256" y="320" text-anchor="middle"
-        font-family="Apple Color Emoji, Segoe UI Emoji, Noto Color Emoji, Twemoji Mozilla, EmojiOne Color, Symbola, sans-serif"
-        font-size="280" filter="url(#shadow_barometer_altimeter)">🌡</text>
+  <g transform="translate(102.4, 102.4) scale(1.2)" fill="white" filter="url(#shadow_barometer_altimeter)">
+    <path d="M232,208a8,8,0,0,1-8,8H32a8,8,0,0,1-8-8V48a8,8,0,0,1,16,0V147.31l42.34-42.35a8,8,0,0,1,11.32,0L128,132.69l42.34-42.35a8,8,0,0,1,11.32,11.32l-48,48a8,8,0,0,1-11.32,0L88,117.31,40,165.31V200H224A8,8,0,0,1,232,208Z"/>
+  </g>
 </svg>

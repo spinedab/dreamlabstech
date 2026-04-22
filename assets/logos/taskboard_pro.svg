@@ -5,17 +5,17 @@
       <stop offset="100%" stop-color="#448AFF"/>
     </linearGradient>
     <radialGradient id="glow_taskboard_pro" cx="50%" cy="52%" r="42%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.55"/>
-      <stop offset="60%" stop-color="#ffffff" stop-opacity="0.10"/>
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.35"/>
+      <stop offset="60%" stop-color="#ffffff" stop-opacity="0.08"/>
       <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
     </radialGradient>
     <filter id="shadow_taskboard_pro" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.18"/>
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.22"/>
     </filter>
   </defs>
   <rect x="0" y="0" width="512" height="512" rx="96" ry="96" fill="url(#bg_taskboard_pro)"/>
   <circle cx="256" cy="266" r="180" fill="url(#glow_taskboard_pro)"/>
-  <text x="256" y="320" text-anchor="middle"
-        font-family="Apple Color Emoji, Segoe UI Emoji, Noto Color Emoji, Twemoji Mozilla, EmojiOne Color, Symbola, sans-serif"
-        font-size="280" filter="url(#shadow_taskboard_pro)">📋</text>
+  <g transform="translate(102.4, 102.4) scale(1.2)" fill="white" filter="url(#shadow_taskboard_pro)">
+    <path d="M229.66,66.34l-56-56A8,8,0,0,0,168,8H88a16,16,0,0,0-16,16V40H56A16,16,0,0,0,40,56V216a16,16,0,0,0,16,16H168a16,16,0,0,0,16-16V200h16a16,16,0,0,0,16-16V72A8,8,0,0,0,229.66,66.34ZM168,216H56V56H88V184a16,16,0,0,0,16,16h64Zm32-32H104V24h64V64a8,8,0,0,0,8,8h24Z"/>
+  </g>
 </svg>

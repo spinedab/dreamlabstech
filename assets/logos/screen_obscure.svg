@@ -5,17 +5,17 @@
       <stop offset="100%" stop-color="#29B6F6"/>
     </linearGradient>
     <radialGradient id="glow_screen_obscure" cx="50%" cy="52%" r="42%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.55"/>
-      <stop offset="60%" stop-color="#ffffff" stop-opacity="0.10"/>
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.35"/>
+      <stop offset="60%" stop-color="#ffffff" stop-opacity="0.08"/>
       <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
     </radialGradient>
     <filter id="shadow_screen_obscure" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.18"/>
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.22"/>
     </filter>
   </defs>
   <rect x="0" y="0" width="512" height="512" rx="96" ry="96" fill="url(#bg_screen_obscure)"/>
   <circle cx="256" cy="266" r="180" fill="url(#glow_screen_obscure)"/>
-  <text x="256" y="320" text-anchor="middle"
-        font-family="Apple Color Emoji, Segoe UI Emoji, Noto Color Emoji, Twemoji Mozilla, EmojiOne Color, Symbola, sans-serif"
-        font-size="280" filter="url(#shadow_screen_obscure)">🕶</text>
+  <g transform="translate(102.4, 102.4) scale(1.2)" fill="white" filter="url(#shadow_screen_obscure)">
+    <path d="M208,40H48A16,16,0,0,0,32,56v58.78c0,89.61,75.82,119.34,91,124.39a15.53,15.53,0,0,0,10,0c15.2-5.05,91-34.78,91-124.39V56A16,16,0,0,0,208,40Z"/>
+  </g>
 </svg>
