@@ -4,18 +4,12 @@
       <stop offset="0%" stop-color="#FF5722"/>
       <stop offset="100%" stop-color="#FF9800"/>
     </linearGradient>
-    <radialGradient id="glow_fitbuddy_app" cx="50%" cy="52%" r="42%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.35"/>
-      <stop offset="60%" stop-color="#ffffff" stop-opacity="0.08"/>
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
-    </radialGradient>
-    <filter id="shadow_fitbuddy_app" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.22"/>
+    <filter id="shadow_fitbuddy_app" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.25"/>
     </filter>
   </defs>
-  <rect x="0" y="0" width="512" height="512" rx="96" ry="96" fill="url(#bg_fitbuddy_app)"/>
-  <circle cx="256" cy="266" r="180" fill="url(#glow_fitbuddy_app)"/>
-  <g transform="translate(102.4, 102.4) scale(1.2)" fill="white" filter="url(#shadow_fitbuddy_app)">
-    <path d="M248,120H240V88a8,8,0,0,0-8-8H208a8,8,0,0,0-8,8v16H56V88a8,8,0,0,0-8-8H24a8,8,0,0,0-8,8v32H8a8,8,0,0,0,0,16h8v32a8,8,0,0,0,8,8H48a8,8,0,0,0,8-8V152H200v16a8,8,0,0,0,8,8h24a8,8,0,0,0,8-8V136h8a8,8,0,0,0,0-16Z"/>
+  <rect width="512" height="512" rx="96" fill="url(#bg_fitbuddy_app)"/>
+  <g transform="translate(128,128) scale(1.0)" fill="white" filter="url(#shadow_fitbuddy_app)">
+    <path d="M248,120h-8V88a16,16,0,0,0-16-16H208V64a16,16,0,0,0-16-16H168a16,16,0,0,0-16,16v56H104V64A16,16,0,0,0,88,48H64A16,16,0,0,0,48,64v8H32A16,16,0,0,0,16,88v32H8a8,8,0,0,0,0,16h8v32a16,16,0,0,0,16,16H48v8a16,16,0,0,0,16,16H88a16,16,0,0,0,16-16V136h48v56a16,16,0,0,0,16,16h24a16,16,0,0,0,16-16v-8h16a16,16,0,0,0,16-16V136h8a8,8,0,0,0,0-16ZM32,168V88H48v80Zm56,24H64V64H88V192Zm104,0H168V64h24V175.82c0,.06,0,.12,0,.18s0,.12,0,.18V192Zm32-24H208V88h16Z"/>
   </g>
 </svg>

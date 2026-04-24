@@ -4,18 +4,12 @@
       <stop offset="0%" stop-color="#0D47A1"/>
       <stop offset="100%" stop-color="#448AFF"/>
     </linearGradient>
-    <radialGradient id="glow_notevault" cx="50%" cy="52%" r="42%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.35"/>
-      <stop offset="60%" stop-color="#ffffff" stop-opacity="0.08"/>
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
-    </radialGradient>
-    <filter id="shadow_notevault" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.22"/>
+    <filter id="shadow_notevault" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.25"/>
     </filter>
   </defs>
-  <rect x="0" y="0" width="512" height="512" rx="96" ry="96" fill="url(#bg_notevault)"/>
-  <circle cx="256" cy="266" r="180" fill="url(#glow_notevault)"/>
-  <g transform="translate(102.4, 102.4) scale(1.2)" fill="white" filter="url(#shadow_notevault)">
-    <path d="M208,24H72A32,32,0,0,0,40,56V224a8,8,0,0,0,8,8H192a8,8,0,0,0,0-16H56a16,16,0,0,1,16-16H208a8,8,0,0,0,8-8V32A8,8,0,0,0,208,24Z"/>
+  <rect width="512" height="512" rx="96" fill="url(#bg_notevault)"/>
+  <g transform="translate(128,128) scale(1.0)" fill="white" filter="url(#shadow_notevault)">
+    <path d="M208,80H176V56a48,48,0,0,0-96,0V80H48A16,16,0,0,0,32,96V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V96A16,16,0,0,0,208,80ZM96,56a32,32,0,0,1,64,0V80H96ZM208,208H48V96H208V208Zm-68-56a12,12,0,1,1-12-12A12,12,0,0,1,140,152Z"/>
   </g>
 </svg>

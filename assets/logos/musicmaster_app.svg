@@ -4,18 +4,12 @@
       <stop offset="0%" stop-color="#6200EA"/>
       <stop offset="100%" stop-color="#FF6D00"/>
     </linearGradient>
-    <radialGradient id="glow_musicmaster_app" cx="50%" cy="52%" r="42%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.35"/>
-      <stop offset="60%" stop-color="#ffffff" stop-opacity="0.08"/>
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
-    </radialGradient>
-    <filter id="shadow_musicmaster_app" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.22"/>
+    <filter id="shadow_musicmaster_app" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.25"/>
     </filter>
   </defs>
-  <rect x="0" y="0" width="512" height="512" rx="96" ry="96" fill="url(#bg_musicmaster_app)"/>
-  <circle cx="256" cy="266" r="180" fill="url(#glow_musicmaster_app)"/>
-  <g transform="translate(102.4, 102.4) scale(1.2)" fill="white" filter="url(#shadow_musicmaster_app)">
-    <path d="M212.92,25.69a8,8,0,0,0-6.86-1.45l-128,32A8,8,0,0,0,72,64V174.1A36,36,0,1,0,88,204V70.25l112-28v99.85A36,36,0,1,0,216,172V32A8,8,0,0,0,212.92,25.69Z"/>
+  <rect width="512" height="512" rx="96" fill="url(#bg_musicmaster_app)"/>
+  <g transform="translate(128,128) scale(1.0)" fill="white" filter="url(#shadow_musicmaster_app)">
+    <path d="M210.3,56.34l-80-24A8,8,0,0,0,120,40V148.26A48,48,0,1,0,136,184V98.75l69.7,20.91A8,8,0,0,0,216,112V64A8,8,0,0,0,210.3,56.34ZM88,216a32,32,0,1,1,32-32A32,32,0,0,1,88,216ZM200,101.25l-64-19.2V50.75L200,70Z"/>
   </g>
 </svg>

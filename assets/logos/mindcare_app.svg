@@ -4,18 +4,12 @@
       <stop offset="0%" stop-color="#2E7D92"/>
       <stop offset="100%" stop-color="#A8DADC"/>
     </linearGradient>
-    <radialGradient id="glow_mindcare_app" cx="50%" cy="52%" r="42%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.35"/>
-      <stop offset="60%" stop-color="#ffffff" stop-opacity="0.08"/>
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
-    </radialGradient>
-    <filter id="shadow_mindcare_app" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.22"/>
+    <filter id="shadow_mindcare_app" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.25"/>
     </filter>
   </defs>
-  <rect x="0" y="0" width="512" height="512" rx="96" ry="96" fill="url(#bg_mindcare_app)"/>
-  <circle cx="256" cy="266" r="180" fill="url(#glow_mindcare_app)"/>
-  <g transform="translate(102.4, 102.4) scale(1.2)" fill="white" filter="url(#shadow_mindcare_app)">
-    <path d="M248,128a56,56,0,0,0-26.81-47.85,55.69,55.69,0,0,0-9.73-48.46A56,56,0,0,0,128,16a56,56,0,0,0-83.46,15.69,55.69,55.69,0,0,0-9.73,48.46,56,56,0,0,0,0,95.7,55.69,55.69,0,0,0,9.73,48.46A56,56,0,0,0,128,240a56,56,0,0,0,83.46-15.69,55.69,55.69,0,0,0,9.73-48.46A56,56,0,0,0,248,128Z"/>
+  <rect width="512" height="512" rx="96" fill="url(#bg_mindcare_app)"/>
+  <g transform="translate(128,128) scale(1.0)" fill="white" filter="url(#shadow_mindcare_app)">
+    <path d="M248,124a56.11,56.11,0,0,0-32-50.61V72a48,48,0,0,0-88-26.49A48,48,0,0,0,40,72v1.39a56,56,0,0,0,0,101.2V176a48,48,0,0,0,88,26.49A48,48,0,0,0,216,176v-1.41A56.09,56.09,0,0,0,248,124ZM88,208a32,32,0,0,1-31.81-28.56A55.87,55.87,0,0,0,64,180h8a8,8,0,0,0,0-16H64A40,40,0,0,1,50.67,86.27,8,8,0,0,0,56,78.73V72a32,32,0,0,1,64,0v68.26A47.8,47.8,0,0,0,88,128a8,8,0,0,0,0,16,32,32,0,0,1,0,64Zm104-44h-8a8,8,0,0,0,0,16h8a55.87,55.87,0,0,0,7.81-.56A32,32,0,1,1,168,144a8,8,0,0,0,0-16,47.8,47.8,0,0,0-32,12.26V72a32,32,0,0,1,64,0v6.73a8,8,0,0,0,5.33,7.54A40,40,0,0,1,192,164Zm16-52a8,8,0,0,1-8,8h-4a36,36,0,0,1-36-36V80a8,8,0,0,1,16,0v4a20,20,0,0,0,20,20h4A8,8,0,0,1,208,112ZM60,120H56a8,8,0,0,1,0-16h4A20,20,0,0,0,80,84V80a8,8,0,0,1,16,0v4A36,36,0,0,1,60,120Z"/>
   </g>
 </svg>

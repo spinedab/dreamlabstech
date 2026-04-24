@@ -4,18 +4,12 @@
       <stop offset="0%" stop-color="#455A64"/>
       <stop offset="100%" stop-color="#29B6F6"/>
     </linearGradient>
-    <radialGradient id="glow_frequency_counter" cx="50%" cy="52%" r="42%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.35"/>
-      <stop offset="60%" stop-color="#ffffff" stop-opacity="0.08"/>
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
-    </radialGradient>
-    <filter id="shadow_frequency_counter" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.22"/>
+    <filter id="shadow_frequency_counter" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.25"/>
     </filter>
   </defs>
-  <rect x="0" y="0" width="512" height="512" rx="96" ry="96" fill="url(#bg_frequency_counter)"/>
-  <circle cx="256" cy="266" r="180" fill="url(#glow_frequency_counter)"/>
-  <g transform="translate(102.4, 102.4) scale(1.2)" fill="white" filter="url(#shadow_frequency_counter)">
-    <path d="M232,208a8,8,0,0,1-8,8H32a8,8,0,0,1-8-8V48a8,8,0,0,1,16,0V147.31l42.34-42.35a8,8,0,0,1,11.32,0L128,132.69l42.34-42.35a8,8,0,0,1,11.32,11.32l-48,48a8,8,0,0,1-11.32,0L88,117.31,40,165.31V200H224A8,8,0,0,1,232,208Z"/>
+  <rect width="512" height="512" rx="96" fill="url(#bg_frequency_counter)"/>
+  <g transform="translate(128,128) scale(1.0)" fill="white" filter="url(#shadow_frequency_counter)">
+    <path d="M64,105V40a8,8,0,0,0-16,0v65a32,32,0,0,0,0,62v49a8,8,0,0,0,16,0V167a32,32,0,0,0,0-62Zm-8,47a16,16,0,1,1,16-16A16,16,0,0,1,56,152Zm80-95V40a8,8,0,0,0-16,0V57a32,32,0,0,0,0,62v97a8,8,0,0,0,16,0V119a32,32,0,0,0,0-62Zm-8,47a16,16,0,1,1,16-16A16,16,0,0,1,128,104Zm104,64a32.06,32.06,0,0,0-24-31V40a8,8,0,0,0-16,0v97a32,32,0,0,0,0,62v17a8,8,0,0,0,16,0V199A32.06,32.06,0,0,0,232,168Zm-32,16a16,16,0,1,1,16-16A16,16,0,0,1,200,184Z"/>
   </g>
 </svg>

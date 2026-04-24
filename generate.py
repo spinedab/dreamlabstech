@@ -40,7 +40,7 @@ PALETTE = {
     "Social":          ("#E91E63", "#FF4081"),
     "Ecommerce":       ("#00ACC1", "#FFAB00"),
     "Juegos":          ("#7B1FA2", "#FFEB3B"),
-    "Negocios":        ("#37474F", "#FFC400"),
+    "Negocios":        ("#37474F", "#64B5F6"),
 }
 
 # ---------------------------------------------------------------------------
@@ -671,18 +671,6 @@ def normalize_description(desc: str, cat: str, name: str) -> str:
 # ---------------------------------------------------------------------------
 # HTML templates
 # ---------------------------------------------------------------------------
-APP_ICON_SVG = """<svg viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg' aria-hidden='true'>
-  <defs>
-    <linearGradient id='g' x1='0' y1='0' x2='1' y2='1'>
-      <stop offset='0%' stop-color='{primary}'/>
-      <stop offset='100%' stop-color='{accent}'/>
-    </linearGradient>
-  </defs>
-  <rect width='64' height='64' rx='14' fill='url(#g)'/>
-  <text x='50%' y='55%' text-anchor='middle' font-family='Inter,Arial,sans-serif' font-size='26' font-weight='700' fill='#ffffff'>{letter}</text>
-</svg>"""
-
-
 def build_screens_svg(primary: str, accent: str, label: str) -> str:
     return (
         f"<svg viewBox='0 0 220 440' xmlns='http://www.w3.org/2000/svg' class='w-full h-auto' aria-hidden='true'>"
@@ -730,7 +718,6 @@ def app_page(app: dict) -> str:
     tagline = app["tagline"]
     desc = app["description"]
     play_url = app["play_url"]
-    letter = (name[:1] or "A").upper()
 
     features = CAT_FEATURES[cat][:6]
     feature_html = "\n".join(feature_card(t, d, primary) for t, d in features)
@@ -782,7 +769,7 @@ def app_page(app: dict) -> str:
 <header class=\"sticky top-0 z-30 backdrop-blur bg-white/80 dark:bg-slate-900/80 border-b border-slate-200 dark:border-slate-800\">
   <div class=\"max-w-6xl mx-auto px-4 h-16 flex items-center justify-between\">
     <a href=\"../index.html\" class=\"flex items-center gap-3\">
-      <span class=\"w-9 h-9 rounded-xl flex items-center justify-center text-white font-bold\" style=\"background:linear-gradient(135deg,{primary},{accent})\">{letter}</span>
+      <img src=\"../assets/logos/{esc(slug)}.svg\" alt=\"{esc(name)} logo\" class=\"w-9 h-9 rounded-xl object-contain\" loading=\"eager\"/>
       <span class=\"font-bold text-slate-900 dark:text-white\">{esc(name)}</span>
     </a>
     <nav class=\"hidden md:flex gap-6 text-sm font-medium\">
@@ -820,9 +807,7 @@ def app_page(app: dict) -> str:
       <p class=\"mt-4 text-xs text-slate-500\">Desarrollado por DreamLabsTech</p>
     </div>
     <div class=\"flex justify-center\">
-      <div class=\"w-40 h-40 md:w-56 md:h-56\">
-        {APP_ICON_SVG.format(primary=primary, accent=accent, letter=letter)}
-      </div>
+      <img src=\"../assets/logos/{esc(slug)}.svg\" alt=\"{esc(name)} logo\" class=\"w-40 h-40 md:w-56 md:h-56 object-contain drop-shadow-2xl\" loading=\"eager\"/>
     </div>
   </div>
 </section>
@@ -928,12 +913,11 @@ def index_page(apps: list) -> str:
     cards = []
     for a in apps:
         primary, accent = a["primary"], a["accent"]
-        letter = (a["name"][:1] or "A").upper()
         cards.append(f"""
     <article class=\"app-card bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 dark:border-slate-700\" data-name=\"{esc(a['name'].lower())}\" data-category=\"{esc(a['category'])}\">
       <div class=\"p-6\">
         <div class=\"flex items-center gap-4 mb-4\">
-          <span class=\"w-14 h-14 rounded-2xl flex items-center justify-center text-white font-extrabold text-xl\" style=\"background:linear-gradient(135deg,{primary},{accent})\">{letter}</span>
+          <img src=\"assets/logos/{esc(a['slug'])}.svg\" alt=\"{esc(a['name'])} logo\" class=\"w-14 h-14 rounded-2xl object-contain flex-shrink-0\" loading=\"lazy\"/>
           <div>
             <h3 class=\"font-bold text-lg text-slate-900 dark:text-white leading-tight\">{esc(a['name'])}</h3>
             <span class=\"inline-block text-[11px] font-semibold mt-1 px-2 py-0.5 rounded-full\" style=\"background:{hex_rgba(primary,0.15)};color:{primary}\">{esc(a['category'])}</span>

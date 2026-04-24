@@ -4,18 +4,12 @@
       <stop offset="0%" stop-color="#FF8C00"/>
       <stop offset="100%" stop-color="#4CAF50"/>
     </linearGradient>
-    <radialGradient id="glow_healthybites_app" cx="50%" cy="52%" r="42%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.35"/>
-      <stop offset="60%" stop-color="#ffffff" stop-opacity="0.08"/>
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
-    </radialGradient>
-    <filter id="shadow_healthybites_app" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.22"/>
+    <filter id="shadow_healthybites_app" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.25"/>
     </filter>
   </defs>
-  <rect x="0" y="0" width="512" height="512" rx="96" ry="96" fill="url(#bg_healthybites_app)"/>
-  <circle cx="256" cy="266" r="180" fill="url(#glow_healthybites_app)"/>
-  <g transform="translate(102.4, 102.4) scale(1.2)" fill="white" filter="url(#shadow_healthybites_app)">
-    <path d="M223.45,40.07a8,8,0,0,0-7.52-7.52C139.8,28.08,78.82,51,52.82,94c-14.5,24-17.46,52.42-8.69,82.89,3.26,11.33,8.31,20.3,14.9,26.74a72.1,72.1,0,0,1,4.93-20.46,71.85,71.85,0,0,1,24.48-30.53A135.9,135.9,0,0,1,124,120.77C78.07,140.17,57.15,182.58,44,229.51a8,8,0,0,0,15.42,4.37C70.49,198,93.5,162.83,144,144.67c40.68-14.61,77.49-44.09,77.49-97.18Q223.53,45.47,223.45,40.07Z"/>
+  <rect width="512" height="512" rx="96" fill="url(#bg_healthybites_app)"/>
+  <g transform="translate(128,128) scale(1.0)" fill="white" filter="url(#shadow_healthybites_app)">
+    <path d="M232,64H203.31l26.35-26.34a8,8,0,0,0-11.32-11.32L192,52.69V24a8,8,0,0,0-16,0V56.57a64,64,0,0,0-77.2,10.12l0,0,0,0,0,0c-40.1,39.39-70.25,133.08-73.19,142.45a16,16,0,0,0,21.26,21.26c9.37-2.94,103.18-33.13,142.47-73.21A64,64,0,0,0,199.43,80H232a8,8,0,0,0,0-16Zm-54.12,82c-8.94,9.12-21.25,17.8-34.85,25.73l-25.38-25.39a8,8,0,0,0-11.32,11.32l22.09,22.09c-40.87,21.19-86.32,35.42-87,35.63A7.93,7.93,0,0,0,40,216a7.93,7.93,0,0,0,.59-1.41c.29-.93,28-89.58,64-130.67l33.77,33.77a8,8,0,0,0,11.32-11.32L116.18,72.88A48,48,0,0,1,177.88,146Z"/>
   </g>
 </svg>

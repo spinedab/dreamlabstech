@@ -4,18 +4,12 @@
       <stop offset="0%" stop-color="#E91E63"/>
       <stop offset="100%" stop-color="#FF4081"/>
     </linearGradient>
-    <radialGradient id="glow_unova_social" cx="50%" cy="52%" r="42%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.35"/>
-      <stop offset="60%" stop-color="#ffffff" stop-opacity="0.08"/>
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
-    </radialGradient>
-    <filter id="shadow_unova_social" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.22"/>
+    <filter id="shadow_unova_social" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.25"/>
     </filter>
   </defs>
-  <rect x="0" y="0" width="512" height="512" rx="96" ry="96" fill="url(#bg_unova_social)"/>
-  <circle cx="256" cy="266" r="180" fill="url(#glow_unova_social)"/>
-  <g transform="translate(102.4, 102.4) scale(1.2)" fill="white" filter="url(#shadow_unova_social)">
-    <path d="M128,24A104,104,0,1,0,232,128,104.12,104.12,0,0,0,128,24Z"/>
+  <rect width="512" height="512" rx="96" fill="url(#bg_unova_social)"/>
+  <g transform="translate(128,128) scale(1.0)" fill="white" filter="url(#shadow_unova_social)">
+    <path d="M176,160a39.89,39.89,0,0,0-28.62,12.09l-46.1-29.63a39.8,39.8,0,0,0,0-28.92l46.1-29.63a40,40,0,1,0-8.66-13.45l-46.1,29.63a40,40,0,1,0,0,55.82l46.1,29.63A40,40,0,1,0,176,160Zm0-128a24,24,0,1,1-24,24A24,24,0,0,1,176,32ZM64,152a24,24,0,1,1,24-24A24,24,0,0,1,64,152Zm112,72a24,24,0,1,1,24-24A24,24,0,0,1,176,224Z"/>
   </g>
 </svg>

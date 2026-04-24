@@ -4,18 +4,12 @@
       <stop offset="0%" stop-color="#FF8C00"/>
       <stop offset="100%" stop-color="#4CAF50"/>
     </linearGradient>
-    <radialGradient id="glow_chefin_app" cx="50%" cy="52%" r="42%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.35"/>
-      <stop offset="60%" stop-color="#ffffff" stop-opacity="0.08"/>
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
-    </radialGradient>
-    <filter id="shadow_chefin_app" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.22"/>
+    <filter id="shadow_chefin_app" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.25"/>
     </filter>
   </defs>
-  <rect x="0" y="0" width="512" height="512" rx="96" ry="96" fill="url(#bg_chefin_app)"/>
-  <circle cx="256" cy="266" r="180" fill="url(#glow_chefin_app)"/>
-  <g transform="translate(102.4, 102.4) scale(1.2)" fill="white" filter="url(#shadow_chefin_app)">
-    <path d="M208,80a39.89,39.89,0,0,0-13.38,2.29,48,48,0,0,0-93.24,0A40,40,0,0,0,48,160a8,8,0,0,0,.29,2.18L64.9,222.56A8,8,0,0,0,72.6,228h110.8a8,8,0,0,0,7.7-5.44l16.6-60.38A8,8,0,0,0,208,160a40,40,0,0,0,0-80Z"/>
+  <rect width="512" height="512" rx="96" fill="url(#bg_chefin_app)"/>
+  <g transform="translate(128,128) scale(1.0)" fill="white" filter="url(#shadow_chefin_app)">
+    <path d="M240,112a56.06,56.06,0,0,0-56-56c-1.77,0-3.54.1-5.29.26a56,56,0,0,0-101.42,0C75.54,56.1,73.77,56,72,56A56,56,0,0,0,48,162.59V208a16,16,0,0,0,16,16H192a16,16,0,0,0,16-16V162.59A56.09,56.09,0,0,0,240,112Zm-48,96H64V167.42a55.49,55.49,0,0,0,8,.58H184a55.49,55.49,0,0,0,8-.58Zm-8-56H170.25l5.51-22.06a8,8,0,0,0-15.52-3.88L153.75,152H136V128a8,8,0,0,0-16,0v24H102.25l-6.49-25.94a8,8,0,1,0-15.52,3.88L85.75,152H72a40,40,0,0,1,0-80l.58,0A55.21,55.21,0,0,0,72,80a8,8,0,0,0,16,0,40,40,0,0,1,80,0,8,8,0,0,0,16,0,55.21,55.21,0,0,0-.58-8l.58,0a40,40,0,0,1,0,80Z"/>
   </g>
 </svg>

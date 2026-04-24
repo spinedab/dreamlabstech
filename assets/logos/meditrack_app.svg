@@ -4,18 +4,12 @@
       <stop offset="0%" stop-color="#2E7D32"/>
       <stop offset="100%" stop-color="#FFC107"/>
     </linearGradient>
-    <radialGradient id="glow_meditrack_app" cx="50%" cy="52%" r="42%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.35"/>
-      <stop offset="60%" stop-color="#ffffff" stop-opacity="0.08"/>
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
-    </radialGradient>
-    <filter id="shadow_meditrack_app" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.22"/>
+    <filter id="shadow_meditrack_app" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.25"/>
     </filter>
   </defs>
-  <rect x="0" y="0" width="512" height="512" rx="96" ry="96" fill="url(#bg_meditrack_app)"/>
-  <circle cx="256" cy="266" r="180" fill="url(#glow_meditrack_app)"/>
-  <g transform="translate(102.4, 102.4) scale(1.2)" fill="white" filter="url(#shadow_meditrack_app)">
-    <path d="M178,40c-20.65,0-38.73,8.88-50,23.89C116.73,48.88,98.65,40,78,40a62.07,62.07,0,0,0-62,62c0,78,103.79,135.48,108.21,137.89a8,8,0,0,0,7.58,0C136.21,237.48,240,180,240,102A62.07,62.07,0,0,0,178,40Z"/>
+  <rect width="512" height="512" rx="96" fill="url(#bg_meditrack_app)"/>
+  <g transform="translate(128,128) scale(1.0)" fill="white" filter="url(#shadow_meditrack_app)">
+    <path d="M216.42,39.6a53.26,53.26,0,0,0-75.32,0L39.6,141.09a53.26,53.26,0,0,0,75.32,75.31h0L216.43,114.91A53.31,53.31,0,0,0,216.42,39.6ZM103.61,205.09h0a37.26,37.26,0,0,1-52.7-52.69L96,107.31,148.7,160ZM205.11,103.6,160,148.69,107.32,96l45.1-45.09a37.26,37.26,0,0,1,52.69,52.69ZM189.68,82.34a8,8,0,0,1,0,11.32l-24,24a8,8,0,1,1-11.31-11.32l24-24A8,8,0,0,1,189.68,82.34Z"/>
   </g>
 </svg>

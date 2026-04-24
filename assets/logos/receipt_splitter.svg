@@ -4,18 +4,12 @@
       <stop offset="0%" stop-color="#1565C0"/>
       <stop offset="100%" stop-color="#00BFA5"/>
     </linearGradient>
-    <radialGradient id="glow_receipt_splitter" cx="50%" cy="52%" r="42%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.35"/>
-      <stop offset="60%" stop-color="#ffffff" stop-opacity="0.08"/>
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
-    </radialGradient>
-    <filter id="shadow_receipt_splitter" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.22"/>
+    <filter id="shadow_receipt_splitter" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.25"/>
     </filter>
   </defs>
-  <rect x="0" y="0" width="512" height="512" rx="96" ry="96" fill="url(#bg_receipt_splitter)"/>
-  <circle cx="256" cy="266" r="180" fill="url(#glow_receipt_splitter)"/>
-  <g transform="translate(102.4, 102.4) scale(1.2)" fill="white" filter="url(#shadow_receipt_splitter)">
-    <path d="M240,72H224V56a16,16,0,0,0-16-16H48A16,16,0,0,0,32,56V72H16a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H232a16,16,0,0,0,16-16V80A8,8,0,0,0,240,72ZM208,56V192H48V56Z"/>
+  <rect width="512" height="512" rx="96" fill="url(#bg_receipt_splitter)"/>
+  <g transform="translate(128,128) scale(1.0)" fill="white" filter="url(#shadow_receipt_splitter)">
+    <path d="M128,88a40,40,0,1,0,40,40A40,40,0,0,0,128,88Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,128,152ZM240,56H16a8,8,0,0,0-8,8V192a8,8,0,0,0,8,8H240a8,8,0,0,0,8-8V64A8,8,0,0,0,240,56ZM193.65,184H62.35A56.78,56.78,0,0,0,24,145.65v-35.3A56.78,56.78,0,0,0,62.35,72h131.3A56.78,56.78,0,0,0,232,110.35v35.3A56.78,56.78,0,0,0,193.65,184ZM232,93.37A40.81,40.81,0,0,1,210.63,72H232ZM45.37,72A40.81,40.81,0,0,1,24,93.37V72ZM24,162.63A40.81,40.81,0,0,1,45.37,184H24ZM210.63,184A40.81,40.81,0,0,1,232,162.63V184Z"/>
   </g>
 </svg>

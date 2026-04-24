@@ -4,18 +4,12 @@
       <stop offset="0%" stop-color="#2E7D32"/>
       <stop offset="100%" stop-color="#FFC107"/>
     </linearGradient>
-    <radialGradient id="glow_medai_app" cx="50%" cy="52%" r="42%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.35"/>
-      <stop offset="60%" stop-color="#ffffff" stop-opacity="0.08"/>
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
-    </radialGradient>
-    <filter id="shadow_medai_app" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.22"/>
+    <filter id="shadow_medai_app" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.25"/>
     </filter>
   </defs>
-  <rect x="0" y="0" width="512" height="512" rx="96" ry="96" fill="url(#bg_medai_app)"/>
-  <circle cx="256" cy="266" r="180" fill="url(#glow_medai_app)"/>
-  <g transform="translate(102.4, 102.4) scale(1.2)" fill="white" filter="url(#shadow_medai_app)">
-    <path d="M248,128a56,56,0,0,0-26.81-47.85,55.69,55.69,0,0,0-9.73-48.46A56,56,0,0,0,128,16a56,56,0,0,0-83.46,15.69,55.69,55.69,0,0,0-9.73,48.46,56,56,0,0,0,0,95.7,55.69,55.69,0,0,0,9.73,48.46A56,56,0,0,0,128,240a56,56,0,0,0,83.46-15.69,55.69,55.69,0,0,0,9.73-48.46A56,56,0,0,0,248,128Z"/>
+  <rect width="512" height="512" rx="96" fill="url(#bg_medai_app)"/>
+  <g transform="translate(128,128) scale(1.0)" fill="white" filter="url(#shadow_medai_app)">
+    <path d="M220,160a12,12,0,1,1-12-12A12,12,0,0,1,220,160Zm-4.55,39.29A48.08,48.08,0,0,1,168,240H144a48.05,48.05,0,0,1-48-48V151.49A64,64,0,0,1,40,88V40a8,8,0,0,1,8-8H72a8,8,0,0,1,0,16H56V88a48,48,0,0,0,48.64,48c26.11-.34,47.36-22.25,47.36-48.83V48H136a8,8,0,0,1,0-16h24a8,8,0,0,1,8,8V87.17c0,32.84-24.53,60.29-56,64.31V192a32,32,0,0,0,32,32h24a32.06,32.06,0,0,0,31.22-25,40,40,0,1,1,16.23.27ZM232,160a24,24,0,1,0-24,24A24,24,0,0,0,232,160Z"/>
   </g>
 </svg>

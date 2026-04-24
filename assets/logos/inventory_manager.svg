@@ -4,18 +4,12 @@
       <stop offset="0%" stop-color="#37474F"/>
       <stop offset="100%" stop-color="#64B5F6"/>
     </linearGradient>
-    <radialGradient id="glow_inventory_manager" cx="50%" cy="52%" r="42%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.35"/>
-      <stop offset="60%" stop-color="#ffffff" stop-opacity="0.08"/>
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
-    </radialGradient>
-    <filter id="shadow_inventory_manager" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.22"/>
+    <filter id="shadow_inventory_manager" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.25"/>
     </filter>
   </defs>
-  <rect x="0" y="0" width="512" height="512" rx="96" ry="96" fill="url(#bg_inventory_manager)"/>
-  <circle cx="256" cy="266" r="180" fill="url(#glow_inventory_manager)"/>
-  <g transform="translate(102.4, 102.4) scale(1.2)" fill="white" filter="url(#shadow_inventory_manager)">
-    <path d="M230.14,70.54,185.46,25.85A20,20,0,0,0,171.31,20H84.69a20,20,0,0,0-14.15,5.86L25.85,70.54A20,20,0,0,0,20,84.69V168a20,20,0,0,0,20,20H216a20,20,0,0,0,20-20V84.69A20,20,0,0,0,230.14,70.54Z"/>
+  <rect width="512" height="512" rx="96" fill="url(#bg_inventory_manager)"/>
+  <g transform="translate(128,128) scale(1.0)" fill="white" filter="url(#shadow_inventory_manager)">
+    <path d="M223.68,66.15,135.68,18a15.88,15.88,0,0,0-15.36,0l-88,48.17a16,16,0,0,0-8.32,14v95.64a16,16,0,0,0,8.32,14l88,48.17a15.88,15.88,0,0,0,15.36,0l88-48.17a16,16,0,0,0,8.32-14V80.18A16,16,0,0,0,223.68,66.15ZM128,32l80.34,44-29.77,16.3-80.35-44ZM128,120,47.66,76l33.9-18.56,80.34,44ZM40,90l80,43.78v85.79L40,175.82Zm176,85.78h0l-80,43.79V133.82l32-17.51V152a8,8,0,0,0,16,0V107.55L216,90v85.77Z"/>
   </g>
 </svg>

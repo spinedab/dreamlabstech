@@ -4,18 +4,12 @@
       <stop offset="0%" stop-color="#263238"/>
       <stop offset="100%" stop-color="#00E676"/>
     </linearGradient>
-    <radialGradient id="glow_dj_pro_mobile" cx="50%" cy="52%" r="42%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.35"/>
-      <stop offset="60%" stop-color="#ffffff" stop-opacity="0.08"/>
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
-    </radialGradient>
-    <filter id="shadow_dj_pro_mobile" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.22"/>
+    <filter id="shadow_dj_pro_mobile" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.25"/>
     </filter>
   </defs>
-  <rect x="0" y="0" width="512" height="512" rx="96" ry="96" fill="url(#bg_dj_pro_mobile)"/>
-  <circle cx="256" cy="266" r="180" fill="url(#glow_dj_pro_mobile)"/>
-  <g transform="translate(102.4, 102.4) scale(1.2)" fill="white" filter="url(#shadow_dj_pro_mobile)">
-    <path d="M212.92,25.69a8,8,0,0,0-6.86-1.45l-128,32A8,8,0,0,0,72,64V174.1A36,36,0,1,0,88,204V70.25l112-28v99.85A36,36,0,1,0,216,172V32A8,8,0,0,0,212.92,25.69Z"/>
+  <rect width="512" height="512" rx="96" fill="url(#bg_dj_pro_mobile)"/>
+  <g transform="translate(128,128) scale(1.0)" fill="white" filter="url(#shadow_dj_pro_mobile)">
+    <path d="M128,176a48.05,48.05,0,0,0,48-48V64a48,48,0,0,0-96,0v64A48.05,48.05,0,0,0,128,176ZM96,64a32,32,0,0,1,64,0v64a32,32,0,0,1-64,0Zm40,143.6V240a8,8,0,0,1-16,0V207.6A80.11,80.11,0,0,1,48,128a8,8,0,0,1,16,0,64,64,0,0,0,128,0,8,8,0,0,1,16,0A80.11,80.11,0,0,1,136,207.6Z"/>
   </g>
 </svg>
