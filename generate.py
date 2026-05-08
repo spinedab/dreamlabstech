@@ -141,6 +141,34 @@ SLUG_CATEGORY = {
     "inventory_manager": "Negocios", "hotelmaster_app": "Negocios",
     "demo": "Negocios", "rider_app": "Negocios", "driver_app": "Negocios",
     "superapp": "Negocios", "rider": "Negocios", "driver": "Negocios",
+
+    # Blue Ocean 2026 (26 nuevas apps LATAM)
+    "soat_tecno": "Herramientas",
+    "habito_unico": "Productividad",
+    "contra_ruido": "Salud Mental",
+    "calor_extremo": "Estilo de Vida",
+    "agua_raciona": "Estilo de Vida",
+    "ocio_libre": "Estilo de Vida",
+    "citas_doctor": "Estilo de Vida",
+    "remesas_tracker": "Finanzas",
+    "voz_facil": "Herramientas",
+    "tiendita_pos": "Negocios",
+    "mama_medica": "Estilo de Vida",
+    "huerta_urbana": "Estilo de Vida",
+    "conductor_app": "Negocios",
+    "vende_seguro": "Ecommerce",
+    "pasion_carro": "Estilo de Vida",
+    "duelo_asistente": "Salud Mental",
+    "dian_facil": "Finanzas",
+    "vecino_fiable": "Social",
+    "emprende_cita": "Educacion",
+    "arriendo_ya": "Ecommerce",
+    "pymes_ia": "Negocios",
+    "voice_twin": "Herramientas",
+    "ar_inmobiliaria": "Herramientas",
+    "health_360": "Estilo de Vida",
+    "finhealth": "Finanzas",
+    "noticia_neutral": "Educacion",
 }
 
 # ---------------------------------------------------------------------------
@@ -274,6 +302,34 @@ DISPLAY = {
     "pro_audio_eq":      ("Pro Audio EQ",           "Ecualizador y mastering con 10 bandas"),
     "retro_amp":         ("Retro AMP",              "Reproductor retro con skins y visualizador"),
     "dj_pro_mobile":     ("ProMix DJ Studio",       "DJ studio con dual-deck y efectos"),
+
+    # Blue Ocean 2026 - 26 nuevas apps LATAM
+    "soat_tecno":        ("SOAT-Tecno",             "Tracker de SOAT, revision tecnomecanica e impuestos del auto"),
+    "habito_unico":      ("Habito Unico",           "Rompe UN solo habito en 30 dias con coach IA"),
+    "contra_ruido":      ("Contra Ruido",           "White noise por contexto: oficina, estudio, sueno"),
+    "calor_extremo":     ("Calor Extremo",          "Alertas de ola de calor y mapa de zonas frescas"),
+    "agua_raciona":      ("Agua Raciona",           "Tracker de consumo de agua personal y familiar"),
+    "ocio_libre":        ("Ocio Libre",             "Planes gratis cerca de ti, filtrados por barrio"),
+    "citas_doctor":      ("Citas Doctor",           "Tu historial medico personal y unificado"),
+    "remesas_tracker":   ("Remesas Tracker",        "Rastrea remesas familiares y compara comisiones"),
+    "voz_facil":         ("Voz Facil",              "Internet por voz para adultos mayores, sin tipear"),
+    "tiendita_pos":      ("Tiendita POS",           "POS minimalista para tiendas de barrio, sin internet"),
+    "mama_medica":       ("Mama Medica",            "Pediatria con IA para mamas primerizas, sin spam"),
+    "huerta_urbana":     ("Huerta Urbana",          "Diario de huerta casera con alertas y comunidad"),
+    "conductor_app":     ("Conductor App",          "Finanzas y rutas para conductores delivery y Uber"),
+    "vende_seguro":      ("Vende Seguro",           "Vender online sin caer en estafas, con verificacion"),
+    "pasion_carro":      ("Pasion Carro",           "Comunidad y mantenimiento para autos historicos"),
+    "duelo_asistente":   ("Duelo Asistente",        "Acompanamiento empatico con IA para procesar el duelo"),
+    "dian_facil":        ("DIAN Facil",             "Facturacion electronica simple para freelancers"),
+    "vecino_fiable":     ("Vecino Fiable",          "Marketplace hyperlocal por barrio, sin intermediarios"),
+    "emprende_cita":     ("Emprende Cita",          "Mentorias express de 15 minutos con expertos LATAM"),
+    "arriendo_ya":       ("Arriendo Ya",            "Arriendo sin intermediarios con verificacion y escrow"),
+    "pymes_ia":          ("PYMES IA",               "Chatbot WhatsApp Business con IA local para PYMES"),
+    "voice_twin":        ("Voice Twin",             "Clona tu voz de forma local, sin subir nada a la nube"),
+    "ar_inmobiliaria":   ("AR Inmobiliaria",        "Visita propiedades en AR y decora antes de comprar"),
+    "health_360":        ("Health 360",             "Dashboard de salud unificado con correlaciones IA"),
+    "finhealth":         ("FinHealth",              "Score de salud financiera holistico con simulador IA"),
+    "noticia_neutral":   ("Noticia Neutral",        "Resumenes IA con 3 perspectivas y deteccion de sesgo"),
 }
 
 # ---------------------------------------------------------------------------
@@ -872,7 +928,7 @@ def app_page(app: dict) -> str:
   <div class=\"max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8\">
     <div>
       <div class=\"flex items-center gap-3\">
-        <span class=\"w-9 h-9 rounded-xl flex items-center justify-center text-white font-bold\" style=\"background:linear-gradient(135deg,{primary},{accent})\">{letter}</span>
+        <span class=\"w-9 h-9 rounded-xl flex items-center justify-center text-white font-bold\" style=\"background:linear-gradient(135deg,{primary},{accent})\">{esc(name[:1].upper())}</span>
         <span class=\"text-white font-bold\">{esc(name)}</span>
       </div>
       <p class=\"mt-4 text-sm opacity-80\">Una app de DreamLabsTech. Creamos productos moviles con cuidado por la experiencia y la privacidad.</p>
@@ -941,8 +997,8 @@ def index_page(apps: list) -> str:
 <head>
 <meta charset=\"utf-8\"/>
 <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"/>
-<title>DreamLabsTech - 120 Apps Revolucionarias</title>
-<meta name=\"description\" content=\"Explora el catalogo de 120+ apps moviles de DreamLabsTech: salud mental, fitness, finanzas, productividad, educacion y mucho mas.\"/>
+<title>DreamLabsTech - 150+ Apps Revolucionarias</title>
+<meta name=\"description\" content=\"Explora el catalogo de 150+ apps moviles de DreamLabsTech: salud mental, fitness, finanzas, productividad, educacion y mucho mas.\"/>
 <script src=\"https://cdn.tailwindcss.com\"></script>
 <script>
   tailwind.config = {{ darkMode: 'class' }};
@@ -985,7 +1041,7 @@ def index_page(apps: list) -> str:
   <div class=\"max-w-6xl mx-auto px-4 py-20 md:py-28\">
     <div class=\"max-w-3xl\">
       <span class=\"inline-block text-xs font-semibold px-3 py-1 rounded-full bg-violet-100 text-violet-700 dark:bg-violet-500/20 dark:text-violet-300\">Catalogo oficial - 2026</span>
-      <h1 class=\"mt-4 text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-tight\">DreamLabsTech<br/><span class=\"bg-gradient-to-r from-violet-500 via-fuchsia-500 to-cyan-500 bg-clip-text text-transparent\">120 Apps Revolucionarias</span></h1>
+      <h1 class=\"mt-4 text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-tight\">DreamLabsTech<br/><span class=\"bg-gradient-to-r from-violet-500 via-fuchsia-500 to-cyan-500 bg-clip-text text-transparent\">150+ Apps Revolucionarias</span></h1>
       <p class=\"mt-6 text-lg md:text-xl text-slate-600 dark:text-slate-300\">Productos moviles cuidadosamente disenados en 13 categorias: bienestar, fitness, finanzas, productividad y mucho mas. Una suite completa para acompanarte cada dia.</p>
       <div class=\"mt-8 flex flex-wrap gap-3\">
         <a href=\"#catalog\" class=\"inline-flex items-center gap-2 bg-slate-900 text-white dark:bg-white dark:text-slate-900 font-semibold px-6 py-3 rounded-xl shadow-lg\">
